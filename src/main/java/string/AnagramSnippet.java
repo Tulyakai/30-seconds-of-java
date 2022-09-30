@@ -38,6 +38,10 @@ public class AnagramSnippet {
    * @param s2 The second string to be checked
    * @return true if they are anagrams of each other
    */
+
+  private AnagramSnippet(){
+
+  }
   public static boolean isAnagram(String s1, String s2) {
     var l1 = s1.length();
     var l2 = s2.length();

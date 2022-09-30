@@ -37,6 +37,8 @@ public class ThreadPool {
    * available to the Java virtual machine.</p>
    * @return the newly created thread pool
    */
+
+  private ThreadPool(){}
   public static ExecutorService createFixedThreadPool() {
     return Executors.newFixedThreadPool(Runtime.getRuntime().availableProcessors());
   }

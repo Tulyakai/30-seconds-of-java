@@ -35,6 +35,10 @@ public class InsertionSortSnippet {
    *
    * @param arr array to sort
    */
+
+  private InsertionSortSnippet(){
+
+  }
   public static void insertionSort(int[] arr) {
     for (var i = 1; i < arr.length; i++) {
       var tmp = arr[i];

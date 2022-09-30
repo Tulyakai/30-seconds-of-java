@@ -34,6 +34,8 @@ public class SelectionSortSnippet {
    *
    * @param arr array to sort
    */
+
+  private SelectionSortSnippet(){}
   public static void selectionSort(int[] arr) {
     var len = arr.length;
 

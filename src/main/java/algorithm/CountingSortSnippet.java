@@ -37,6 +37,10 @@ public class CountingSortSnippet {
    *
    * @param arr array to sort
    */
+
+  private CountingSortSnippet(){
+
+  }
   public static void countingSort(int[] arr) {
     var max = Arrays.stream(arr).max().getAsInt();
 

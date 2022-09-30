@@ -35,6 +35,8 @@ public class FibonacciSnippet {
    * @param n given number
    * @return fibonacci number for given n
    */
+
+  private FibonacciSnippet(){}
   public static int fibonacci(int n) {
     if (n <= 1) {
       return n;

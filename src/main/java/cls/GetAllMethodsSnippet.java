@@ -39,6 +39,8 @@ public class GetAllMethodsSnippet {
    * @param cls Tested class
    * @return list of methods name
    */
+
+  private GetAllMethodsSnippet(){}
   public static List<String> getAllMethods(final Class<?> cls) {
     return Arrays.stream(cls.getDeclaredMethods())
         .map(Method::getName)

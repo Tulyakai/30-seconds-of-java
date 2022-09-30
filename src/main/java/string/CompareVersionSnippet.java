@@ -25,7 +25,7 @@
 package string;
 
 public class CompareVersionSnippet {
-
+  private CompareVersionSnippet(){}
   private static final String EXTRACT_VERSION_REGEX = ".*?((?<!\\w)\\d+([.-]\\d+)*).*";
 
   /**
@@ -54,6 +54,6 @@ public class CompareVersionSnippet {
   }
 
   private static String[] getVersionComponents(String version) {
-    return version.replaceAll(EXTRACT_VERSION_REGEX, "$1").split("\\.");
+    return version.replace(EXTRACT_VERSION_REGEX, "$1").split("\\.");
   }
 }

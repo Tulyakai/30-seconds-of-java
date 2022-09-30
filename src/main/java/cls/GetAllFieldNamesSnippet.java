@@ -41,6 +41,8 @@ public class GetAllFieldNamesSnippet {
    * @param clazz Tested class
    * @return list of names of all fields
    */
+
+  private GetAllFieldNamesSnippet(){}
   public static List<String> getAllFieldNames(final Class<?> clazz) {
     var fields = new ArrayList<String>();
     var currentClazz = clazz;

@@ -39,6 +39,10 @@ public class MultiArrayConcatenationSnippet {
    * @param <T>   the element type
    * @return concatenated array
    */
+
+  private MultiArrayConcatenationSnippet(){
+
+  }
   public static <T> T[] multiArrayConcat(T[] first, T[]... rest) {
     var totalLength = first.length;
     for (var array : rest) {

@@ -45,5 +45,7 @@ class PrimeNumberSnippetTest {
     assertTrue(PrimeNumberSnippet.isPrime(97));
     assertFalse(PrimeNumberSnippet.isPrime(4));
     assertFalse(PrimeNumberSnippet.isPrime(100));
+    assertFalse(PrimeNumberSnippet.isPrime(25));
+    assertFalse(PrimeNumberSnippet.isPrime(30));
   }
 }

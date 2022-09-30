@@ -39,6 +39,8 @@ public class ListAllFilesSnippet {
    * @param path the path to start the search from
    * @return list of all files
    */
+
+  private ListAllFilesSnippet(){}
   public static List<File> listAllFiles(String path) {
     var all = new ArrayList<File>();
     var list = new File(path).listFiles();

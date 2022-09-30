@@ -43,6 +43,8 @@ public class ZipDirectorySnippet {
    * @param zipFileName The location and name of the zipped file.
    * @throws IOException if an I/O error occurs
    * */
+
+  private ZipDirectorySnippet(){}
   public static void zipDirectory(String srcDirectoryName, String zipFileName) throws IOException {
     var srcDirectory = new File(srcDirectoryName);
     try (

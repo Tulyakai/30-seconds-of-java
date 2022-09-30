@@ -41,6 +41,7 @@ public class ReadLinesSnippet {
    * @return list of strings
    * @throws IOException if an I/O error occurs
    */
+  private ReadLinesSnippet(){}
   public static List<String> readLines(String filename) throws IOException {
     return Files.readAllLines(Paths.get(filename));
   }

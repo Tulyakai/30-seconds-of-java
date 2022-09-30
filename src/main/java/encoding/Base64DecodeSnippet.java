@@ -37,6 +37,8 @@ public class Base64DecodeSnippet {
    * @param input base64 encoded string
    * @return decoded string
    */
+
+  private Base64DecodeSnippet(){}
   public static String decodeBase64(String input) {
     return new String(Base64.getDecoder().decode(input.getBytes()));
   }

@@ -36,6 +36,8 @@ public class PalindromCheckSnippet {
    * @param s string to check
    * @return true if palindrome
    */
+
+  private PalindromCheckSnippet(){}
   public static boolean isPalindrome(String s) {
     var sb = new StringBuilder();
     for (var c : s.toCharArray()) {

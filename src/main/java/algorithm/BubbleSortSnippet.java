@@ -34,6 +34,10 @@ public class BubbleSortSnippet {
    *
    * @param arr array to sort
    */
+
+  private BubbleSortSnippet(){
+
+  }
   public static void bubbleSort(int[] arr) {
     var lastIndex = arr.length - 1;
 

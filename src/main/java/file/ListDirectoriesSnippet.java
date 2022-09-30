@@ -37,6 +37,7 @@ public class ListDirectoriesSnippet {
    * @param path the path where to look
    * @return array of File
    */
+  private ListDirectoriesSnippet(){}
   public static File[] listDirectories(String path) {
     return new File(path).listFiles(File::isDirectory);
   }

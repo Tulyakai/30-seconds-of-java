@@ -42,6 +42,8 @@ public class NaturalNumberBinaryConversionSnippet {
    * @param naturalNumber given number
    * @return Binary string representation of naturalNumber
    */
+
+  private NaturalNumberBinaryConversionSnippet(){}
   public static String toBinary(long naturalNumber) {
     if (naturalNumber < 0) {
       throw new NumberFormatException("Negative Integer, this snippet only accepts "

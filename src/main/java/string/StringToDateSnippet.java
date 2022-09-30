@@ -41,6 +41,8 @@ public class StringToDateSnippet {
    * @return Date
    * @throws ParseException in case of an unparseable date string
    */
+
+  private StringToDateSnippet(){}
   public static Date stringToDate(String date, String format) throws ParseException {
     var simpleDateFormat = new SimpleDateFormat(format);
     return simpleDateFormat.parse(date);

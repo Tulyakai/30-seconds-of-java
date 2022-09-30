@@ -37,6 +37,10 @@ public class LuhnSnippet {
    * @see <a href="https://patents.google.com/patent/US2950048A">Hans P. LUHN's patent US2950048A</a>
    * @see <a href="https://en.wikipedia.org/wiki/Luhn_algorithm">Luhn algorithm on Wikipedia</a>
    */
+
+  private LuhnSnippet(){
+
+  }
   public static int calculateLuhnChecksum(long num) {
     if (num < 0) {
       throw new IllegalArgumentException("Non-negative numbers only.");
@@ -56,9 +60,8 @@ public class LuhnSnippet {
 
       isOddPosition = !isOddPosition;
     }
-    final var checksumDigit = (10 - (sum % 10)) % 10;
     // Outermost modulus handles edge case `num = 0`.
-    return checksumDigit;
+    return (10 - (sum % 10)) % 10;
   }
 
 }

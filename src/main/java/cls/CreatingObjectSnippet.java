@@ -46,6 +46,10 @@ public class CreatingObjectSnippet {
    * @throws ClassNotFoundException <p>when an application tries to load in a class
    * through its string name.</p>
    */
+
+  private CreatingObjectSnippet(){
+
+  }
   public static Object createObject(String cls)
           throws NoSuchMethodException,
           IllegalAccessException,

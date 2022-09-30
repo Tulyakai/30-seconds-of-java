@@ -41,6 +41,8 @@ public class InputStreamToStringSnippet {
    * @return String
    * @throws IOException if an I/O error occurs
    */
+
+  private InputStreamToStringSnippet(){}
   public static String inputStreamToString(InputStream inputStream) throws IOException {
     try (var reader = new BufferedReader(new InputStreamReader(inputStream))) {
       var stringBuilder = new StringBuilder();

@@ -36,6 +36,8 @@ public class LevenshteinDistanceSnippet {
    * @param word2 second word
    * @return distance
    */
+
+  private LevenshteinDistanceSnippet(){}
   public static int findLevenshteinDistance(String word1, String word2) {
     // If word2 is empty, removing
     int[][] ans = new int[word1.length() + 1][word2.length() + 1];

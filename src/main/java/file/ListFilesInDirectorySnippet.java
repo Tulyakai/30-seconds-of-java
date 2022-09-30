@@ -37,6 +37,7 @@ public class ListFilesInDirectorySnippet {
    * @param folder the path where to look
    * @return array of File
    */
+  private ListFilesInDirectorySnippet(){}
   public static File[] listFilesInDirectory(File folder) {
     return folder.listFiles(File::isFile);
   }

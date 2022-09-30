@@ -39,6 +39,9 @@ public class ArrayConcatSnippet {
    * @param <T>    the element type
    * @return concatenated array
    */
+  private ArrayConcatSnippet(){
+
+  }
   public static <T> T[] arrayConcat(T[] first, T[] second) {
     var result = Arrays.copyOf(first, first.length + second.length);
     System.arraycopy(second, 0, result, first.length, second.length);

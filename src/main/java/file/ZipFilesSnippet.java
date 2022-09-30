@@ -43,6 +43,8 @@ public class ZipFilesSnippet {
    * @param zipFilename  the filename of the destination zip file
    * @throws IOException if an I/O error occurs
    */
+
+  private ZipFilesSnippet(){}
   public static void zipFiles(String[] srcFilenames, String zipFilename) throws IOException {
     try (
             var fileOut = new FileOutputStream(zipFilename);

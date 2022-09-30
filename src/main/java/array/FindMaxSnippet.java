@@ -36,6 +36,10 @@ public class FindMaxSnippet {
    * @param arr the array of integers (not null)
    * @return the maximum element from the array
    */
+
+  private FindMaxSnippet(){
+
+  }
   public static int findMax(int[] arr) {
     return Arrays.stream(arr).reduce(Integer.MIN_VALUE, Integer::max);
   }

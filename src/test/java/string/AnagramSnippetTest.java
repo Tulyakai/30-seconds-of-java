@@ -44,5 +44,7 @@ class AnagramSnippetTest {
     assertTrue(AnagramSnippet.isAnagram("~~# @!", "~@!#~ "));
     assertTrue(AnagramSnippet.isAnagram("Mother In Law", "hIt Ler woMan"));
     assertFalse(AnagramSnippet.isAnagram("aa", "aaa"));
+    assertFalse(AnagramSnippet.isAnagram("bb", "bbb"));
+    assertFalse(AnagramSnippet.isAnagram("cc", "ccc"));
   }
 }

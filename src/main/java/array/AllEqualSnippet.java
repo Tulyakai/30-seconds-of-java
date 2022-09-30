@@ -38,6 +38,9 @@ public class AllEqualSnippet {
    * @param <T> the element type
    * @return true if all elements in the array are equal
    */
+  private AllEqualSnippet(){
+    
+  }
   public static <T> boolean allEqual(T[] arr) {
     return Arrays.stream(arr).distinct().count() == 1;
   }

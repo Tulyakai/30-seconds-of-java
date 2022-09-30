@@ -39,6 +39,8 @@ public class PerformLotterySnippet {
    * @param numbersToPick how many numbers the player needs to pick (e.g. 6)
    * @return array with the random numbers
    */
+
+  private PerformLotterySnippet(){}
   public static Integer[] performLottery(int numNumbers, int numbersToPick) {
     var numbers = new ArrayList<Integer>();
     for (var i = 0; i < numNumbers; i++) {

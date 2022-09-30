@@ -36,6 +36,10 @@ public class QuickSortSnippet {
    * @param left  left index where to begin sort (e.g. 0)
    * @param right right index where to end sort (e.g. array length - 1)
    */
+
+  private QuickSortSnippet(){
+
+  }
   public static void quickSort(int[] arr, int left, int right) {
     var pivotIndex = left + (right - left) / 2;
     var pivotValue = arr[pivotIndex];

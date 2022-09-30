@@ -40,6 +40,8 @@ public class GetAllPublicFieldNamesSnippet {
    * @param clazz Tested class
    * @return list of name of public fields
    */
+
+  private GetAllPublicFieldNamesSnippet(){}
   public static List<String> getAllPublicFieldNames(final Class<?> clazz) {
     return Arrays.stream(clazz.getFields())
         .map(Field::getName)

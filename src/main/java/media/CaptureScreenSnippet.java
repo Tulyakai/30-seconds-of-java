@@ -44,6 +44,8 @@ public class CaptureScreenSnippet {
    * @throws AWTException if the platform configuration does not allow low-level input control
    * @throws IOException  if an I/O error occurs
    */
+
+  private CaptureScreenSnippet(){}
   public static void captureScreen(String filename) throws AWTException, IOException {
     var screenSize = Toolkit.getDefaultToolkit().getScreenSize();
     var screenRectangle = new Rectangle(screenSize);

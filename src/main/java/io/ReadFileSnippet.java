@@ -42,6 +42,8 @@ public class ReadFileSnippet {
    * @param fileName file to read
    * @throws FileNotFoundException if an I/O error occurs
    */
+
+  private ReadFileSnippet(){}
   public static List<String> readFile(String fileName) throws FileNotFoundException {
     try (Stream<String> stream = new BufferedReader(new FileReader(fileName)).lines()) {
       return stream.collect(Collectors.toList());

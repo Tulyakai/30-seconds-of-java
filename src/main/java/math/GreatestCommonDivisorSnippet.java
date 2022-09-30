@@ -36,6 +36,8 @@ public class GreatestCommonDivisorSnippet {
    * @param b other number whose gcd is to be computed
    * @return gcd of the two numbers
    */
+
+  private GreatestCommonDivisorSnippet(){}
   public static int gcd(int a, int b) {
     if (b == 0) {
       return a;

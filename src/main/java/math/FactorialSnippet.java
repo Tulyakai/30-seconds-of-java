@@ -35,6 +35,8 @@ public class FactorialSnippet {
    * @param number for which factorial is to be calculated for
    * @return factorial
    */
+
+  private FactorialSnippet(){}
   public static int factorial(int number) {
     var result = 1;
     for (var factor = 2; factor <= number; factor++) {

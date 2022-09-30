@@ -36,6 +36,8 @@ public class PrimeNumberSnippet {
    * @param number number to check prime
    * @return true if prime
    */
+
+  private PrimeNumberSnippet(){}
   public static boolean isPrime(int number) {
     if (number < 3) {
       return true;

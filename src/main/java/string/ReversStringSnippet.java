@@ -35,6 +35,8 @@ public class ReversStringSnippet {
    * @param s the string to reverse
    * @return reversed string
    */
+
+  private ReversStringSnippet(){}
   public static String reverseString(String s) {
     return new StringBuilder(s).reverse().toString();
   }
